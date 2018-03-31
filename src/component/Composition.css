@@ -1,0 +1,7 @@
+.FancyBorder {
+	border: 1px solid black;
+}
+
+.FancyBorder-blue {
+	border-color: blue;
+}
