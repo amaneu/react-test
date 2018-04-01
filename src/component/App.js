@@ -10,6 +10,14 @@ import NumberList from './Lists';
 import {NameForm, EssayForm, FlavorForm, Reservation} from './Forms';
 import Calculator from './LiftStateUp';
 import {WelcomeDialog, SignUpDialog} from './Composition';
+import ListOfTenThings from './FunctionsAsChildren';
+import {CustomTextInput, AutoFocusTextInput} from './Refs';
+import {UncontrolledNameForm, FileInput} from './UncontrolledComponents';
+import {CounterButtonShouldComponentUpdate, CounterButtonPure} from './Optimization';
+import {ContextExample, ButtonLifecycleContext} from './Context';
+import Table from './Fragments';
+import ParentPortal from './Portals.js';
+import ErrorBoundaryTest from './ErrorBoundary';
 
 class App extends React.Component {
 	render() {
@@ -18,6 +26,8 @@ class App extends React.Component {
 				<h1>hello app</h1>
 				<Welcome name="Alex" />
 				<Welcome name="Ola" />
+				<Welcome name={123} />
+				<Welcome />
 				<Clock />
 				<Clock />
 				<Toggle />
@@ -34,6 +44,18 @@ class App extends React.Component {
 				<Calculator />
 				<WelcomeDialog />
 				<SignUpDialog />
+				<ListOfTenThings />
+				<CustomTextInput />
+				<AutoFocusTextInput />
+				<UncontrolledNameForm />
+				<FileInput />
+				<CounterButtonShouldComponentUpdate />
+				<CounterButtonPure />
+				<ContextExample />
+				<ButtonLifecycleContext>a</ButtonLifecycleContext>
+				<Table />
+				<ParentPortal />
+				<ErrorBoundaryTest />
 			</div>
 		)
 	}
