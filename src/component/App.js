@@ -18,6 +18,8 @@ import {ContextExample, ButtonLifecycleContext} from './Context';
 import Table from './Fragments';
 import ParentPortal from './Portals.js';
 import ErrorBoundaryTest from './ErrorBoundary';
+import FancyButton from './HOC';
+import MouseTracker from './RenderProps';
 
 class App extends React.Component {
 	render() {
@@ -56,6 +58,8 @@ class App extends React.Component {
 				<Table />
 				<ParentPortal />
 				<ErrorBoundaryTest />
+				<FancyButton />
+				<MouseTracker />
 			</div>
 		)
 	}
